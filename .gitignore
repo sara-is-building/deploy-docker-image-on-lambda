@@ -1,0 +1,17 @@
+# Distribution / packaging
+build/
+dist/
+sdist/
+var/
+
+# Dependency directories
+node_modules/
+
+### CDK-specific ignores ###
+cdk.context.json
+.cdk.staging
+package-lock.json
+cdk.out
+*.d.ts
+*.js
+!jest.config.js
