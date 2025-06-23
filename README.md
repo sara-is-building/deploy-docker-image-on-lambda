@@ -3,6 +3,7 @@
 This project shows a simple example of how to use a Docker Image to run code on an AWS Lambda function using CDK.
 
 This is for my Medium article - Getting Started with Docker and AWS Lambda
+Find it here: https://medium.com/gitconnected/getting-started-with-docker-and-aws-lambda-46df3efcbe1f
 
 ----
 
@@ -19,13 +20,13 @@ This is for my Medium article - Getting Started with Docker and AWS Lambda
 ----
 ### To test the Lambda locally using Docker:
 
-#Build the docker image:
+#Build the docker image: 
 `docker buildx build -t "giggity:latest" .`
 
-#Spin up a container:
+#Spin up a container: 
 `docker run -p 9000:8080 giggity`
 
-#Then curl the following url:
+#Then curl the following url: 
 `curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'`
 
 #You should get the following response:
